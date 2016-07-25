@@ -1,0 +1,130 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath} \interdisplaylinepenalty=2500
+\usepackage{algpseudocode}
+\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{dblfloatfix}
+\usepackage{url}
+\usepackage{acronym}
+
+%%%
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+%%%
+% Define acronyms here
+\acrodef{SVM}{Support Vector machine}  %\ac{SVM} or \acp{SVM} for the plural case. 
+\acrodef{RS}{Remote Sensing}
+\acrodef{SR}{Super Resultion}
+\acrodef{LR}{Low Resolution}
+\acrodef{HR}{High Resolution}
+
+
+\begin{document}
+
+\title{Bare Demo of IEEEtran.cls\\ for IEEE Journals}
+
+% authors 
+\author{John~Femiani,~\IEEEmembership{Member,~IEEE,}
+        Lamei~Zhou,~\IEEEmembership{Member,~IEEE}% <-this % stops a space
+\thanks{J. Femiani is with the Department
+of Software Enginerring and Computer Science, Miami Univerisity, Oxford,
+OH, 45056 USA e-mail: femianjc@miamioh.edu.}% <-this % stops a space
+\thanks{L. Zhuo is with Institute of Pattern Recognition and Artificial Intelligence (IPRAI) in the  School of Automation at HuaZhong University of Science and Technology (HUST).}% <-this % stops a space
+\thanks{Manuscript received MONTH DAY, 2016; revised MONTH DY, YEAR.}}
+%TODO: Provide correct submission date
+%TODO: Use correct name & affiliation for Lamei 
+
+
+% The paper headers
+\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+%TODO: Fix headers for wherever we submit
+
+
+% make the title area
+\maketitle
+
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+The abstract goes here.
+\end{abstract}
+%TODO: Provide an abstract LAST thing
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+IEEE, IEEEtran, journal, \LaTeX, paper, template.
+\end{IEEEkeywords}
+%TODO: Keywords (last thing)
+
+
+
+
+\section{Introduction}
+
+
+
+
+\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
+for IEEE journal papers produced under \LaTeX\ using
+IEEEtran.cls version 1.8b and later. I wish you the best of success.
+
+
+We are interested in \ac{SR} from either a single or multiple frames, in particular we desire ``Holographic" approaches that are capable of synthesizing images consistent with \ac{LR} input.  
+
+\subsection{Prior Art}
+
+%
+Freeman's ``Example Based Superresolution" \cite{freeman2002example} ....
+
+Compressive sensing ideas;  Applied to YUV images by Yang \cite{yang2010image}. An single-source approach to \ac{SR}  \cite{lei_single_2012}. 
+
+
+
+Another approach -- deep learning \cite{dong_learning_2014}
+
+
+\subsection{Contributions}
+
+
+
+
+\section{The Method}
+
+\section{Experiments}
+
+
+\section{Conclusion}
+The conclusion goes here.
+
+\bibliographystyle{IEEETran}
+\bibliography{references}
+
+
+
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}{John Femiani, PhD}
+is an associate professor in the Department of Software Engineering and Computer Science at Miami University. He received best paper awards including the Late Sydney R. Parker Best Paper Award in the area of Signal Processing and M. N. S. Swamy Best Paper Award.  His research is applied and interdisciplinary with a focus on remote sensing, computer graphics, computer vision, and 3D geometry. 
+
+\end{IEEEbiography}
+
+\begin{IEEEbiography}{Lamei Zou, PhD} is an associate professor at the Institute of Pattern Recognition and Artificial Intelligence (IPRAI) in the  School of Automation at HuaZhong University of Science and Technology (HUST). Her research interests include image processing such as contour detection, image edge detection, and image quality evaluation; as well as machine learning and image classification algorithm.
+\end{IEEEbiography}
+
+
+
+% that's all folks
+\end{document}
+
+
